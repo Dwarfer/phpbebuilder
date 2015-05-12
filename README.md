@@ -5,6 +5,7 @@
 This is a tools that has been writen to help admins manage the task or updating battleye filters when updates come out.
 
 More information can be found on the EpochMod forum located bellow
+http://epochmod.com/forum/index.php?/topic/35221-wipunofficial-php-battleye-builder/
 
 
 #### Main features ####
