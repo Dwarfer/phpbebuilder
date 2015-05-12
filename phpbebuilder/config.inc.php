@@ -2,7 +2,7 @@
 /*
 	EpochMod - PHP Battleye Parser
 	http://www.deadmenrising.net/
-	https://github.com/Dwarfer/phpbeparser
+	https://github.com/Dwarfer/phpbebuilder
 	By Dwarfer
 	
 	$EOL - Sets the End of Line Type, Leave as PHP_EOL for auto detect on OS else \n for Linux \r\n for Win

@@ -2,7 +2,7 @@
 /*
 	EpochMod - PHP Battleye Parser
 	http://www.deadmenrising.net/
-	https://github.com/Dwarfer/phpbeparser
+	https://github.com/Dwarfer/phpbebuilder
 	By Dwarfer
 	
 	$EOL - Sets the End of Line Type, Leave as PHP_EOL for auto detect on OS else \n for Linux \r\n for Win
@@ -58,9 +58,7 @@ function WriteTheNewFile($newfile,$data){
 		fputs($file, $content);
 		fclose($file);
 	}
-	
 	return;
-
 }
 
 function MergeFilters($base,$diff){
@@ -90,7 +88,6 @@ function BuildArrays($filename){
 	$result = [];
 	foreach ($file as $line_num => $line) {
 		$exploded = explode(" ",$line,3);
-	//	var_dump($exploded[0],$exploded[1],$exploded[2]);
 		$result[$exploded[1]]['level'] = $exploded[0];
 		if(isset($exploded[2]))
 			$result[$exploded[1]]['value'] = $exploded[2];
