@@ -75,7 +75,11 @@ function MergeFilters($base,$diff){
 			}else{
 				$new[$a]['level'] = $b['level'];
 			}
-			$new[$a]['value'] = $b['value'] . " " . $diff[$a]['value'];
+			if($b['value']){
+				$new[$a]['value'] = $b['value'] . " " . $diff[$a]['value'];
+			}else{
+				$new[$a]['value'] = $diff[$a]['value'];
+			}
 		}else{
 			$new[$a]['level'] = $b['level'];
 			$new[$a]['value'] = $b['value'];
