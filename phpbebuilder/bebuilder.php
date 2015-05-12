@@ -27,18 +27,22 @@ foreach ($files as $x => $f ){
 				$merge = MergeFilters($basefile,$difffile);
 				if($merge){
 					WriteTheNewFile($NEW_DIR . "/" . $f, $merge);
+					if($f=="publicvariable.txt"){ WriteTheNewFile($NEW_DIR . "/publicvariable.txt.original", $merge); }
 				}else{
 					//Catch just incase it failes on merge
 					WriteTheNewFile($NEW_DIR . "/" . $f, $basefile);
+					if($f=="publicvariable.txt"){ WriteTheNewFile($NEW_DIR . "/publicvariable.txt.original", $basefile); }
 				}
 			}else{
 				echo "\t$f is empty building default {$f}" . $EOL;
 				WriteTheNewFile($NEW_DIR . "/" . $f, $basefile);
+				if($f=="publicvariable.txt"){ WriteTheNewFile($NEW_DIR . "/publicvariable.txt.original", $basefile); }
 			}
 		}else{
 			//Lets just write the default file
 			echo "\tWriting default {$f}" . $EOL;
 			WriteTheNewFile($NEW_DIR . "/" . $f, $basefile);
+			if($f=="publicvariable.txt"){ WriteTheNewFile($NEW_DIR . "/publicvariable.txt.original", $basefile); }
 		}
 	}
 }
