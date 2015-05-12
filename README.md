@@ -7,21 +7,22 @@ This is a tools that has been writen to help admins manage the task or updating 
 More information can be found on the EpochMod forum located bellow
 
 
-## Main features ##
+#### Main features ####
 
-## ToDo List ##
+#### ToDo List ####
 
-## Contributing ##
+#### Contributing ####
 
-## Configuration ##
+#### Configuration ####
 
 Open up the config.inc.php and change the values you need
 
-## Using the Tools ##
-
+#### Using the Tools ####
 To use this tool just run the following
 
+```sh
 php bebuilder.php
+```
 
-## Credits ##
+#### Credits ####
 
