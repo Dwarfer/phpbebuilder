@@ -1,6 +1,6 @@
-# phpbeparser
+# phpbebuilder
 
-# About PHP Battleye Parser #
+# About PHP Battleye Builder #
  
 This is a tools that has been writen to help admins manage the task or updating battleye filters when updates come out.
 
